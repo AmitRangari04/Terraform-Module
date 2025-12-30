@@ -2,4 +2,9 @@
 resource "aws_instance" "web" {
   ami           = var.image_id
   instance_type = var.instance_type
+
 }
+
+ tags = {
+    Name = "Ec2-From-Terraform-Git_Module"
+  }
